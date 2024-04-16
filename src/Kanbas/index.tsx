@@ -13,7 +13,9 @@ import { Provider } from "react-redux";
 
 const API_BASE = process.env.REACT_APP_BASE_API_URL;
 function Kanbas() {
-  const COURSES_API = `${API_BASE}/api/courses`;
+  const COURSES_API = `https://kanbas-node-server-app-3-7335311db66e.herokuapp.com/`;
+
+  // const COURSES_API = `${API_BASE}/api/courses`;
   const findAllCourses = async () => {
     const response = await axios.get(COURSES_API);
     setCourses(response.data);
