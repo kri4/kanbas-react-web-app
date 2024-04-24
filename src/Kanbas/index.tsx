@@ -10,7 +10,7 @@ import axios from "axios";
 import store from "./store";
 import { Provider } from "react-redux";
 
-const API_BASE = process.env.REACT_APP_API_BASE;
+const API_BASE = process.env.REACT_APP_BASE_API_URL;
 function Kanbas() {
   const COURSES_API = `${API_BASE}/api/courses`;
   const findAllCourses = async () => {
